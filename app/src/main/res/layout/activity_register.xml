@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:padding="10dp">
+
+            <EditText
+                android:id="@+id/signup_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Name"/>
+
+            <EditText
+                android:id="@+id/signup_input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/signup_input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:hint="@string/hint_password" />
+
+            <EditText
+                android:id="@+id/signup_input_retypepass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:hint="@string/hint_retypepass"/>
+
+        <EditText
+            android:id="@+id/signup_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:layout_marginTop="10dp"
+            android:hint="Enter Contact"/>
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#4ac9ce"
+        android:layout_gravity="center"
+        android:text="@string/regi_btn"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_link_login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:background="@null"
+        android:text="@string/btn_link_login"
+        android:textColor="@android:color/black" />
+</LinearLayout>

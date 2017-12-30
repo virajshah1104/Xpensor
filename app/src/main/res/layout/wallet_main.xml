@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/wallettxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="#000000"
+        android:text="Wallet"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+
+    <TextView
+        android:id="@+id/wallet_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textColor="#000000"
+        android:background="@drawable/listview_border"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Budget  :            Rs.5000/-"
+        android:layout_below="@+id/wallettxt"
+        android:layout_alignLeft="@+id/wallettxt"
+        android:layout_alignStart="@+id/wallettxt" />
+    <!--TextView
+        android:id="@+id/wallet_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
+
+        android:textColor="#ff4500"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:text="5000" /-->
+
+    <ImageButton
+        android:id="@+id/imgbtn_edit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:src="@drawable/plus1"
+        android:layout_alignTop="@+id/wallet_budget"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/listview_border"
+        android:id="@+id/ioull"
+        android:clickable="true"
+        android:layout_below="@+id/wallet_budget"
+        android:layout_alignLeft="@+id/wallet_budget"
+        android:layout_alignStart="@+id/wallet_budget"
+        android:layout_alignRight="@+id/imgbtn_edit"
+        android:layout_alignEnd="@+id/imgbtn_edit"
+        android:layout_marginTop="77dp">
+        <Button
+            android:id="@+id/iou"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:text="You Owe :"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:stateListAnimator="@null"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Some Amount"
+            android:textColor="#fa0808"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/listview_border"
+        android:id="@+id/uomll"
+        android:layout_marginTop="97dp"
+        android:layout_below="@+id/ioull"
+        android:layout_alignTop="@+id/ioull"
+        android:layout_alignLeft="@+id/ioull"
+        android:layout_alignStart="@+id/ioull"
+        android:layout_alignRight="@+id/ioull"
+        android:layout_alignEnd="@+id/ioull">
+        <Button
+            android:id="@+id/uom"
+            android:layout_width="154dp"
+            android:layout_height="40dp"
+            android:background="#ffffff"
+            android:text="You are Owed :"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            android:stateListAnimator="@null"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Some Amount"
+            android:textColor="#1dd359"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="15dp"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+</RelativeLayout>
